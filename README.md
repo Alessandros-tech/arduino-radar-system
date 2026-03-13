@@ -40,17 +40,6 @@ Il progetto simula i principi base dei sistemi radar reali (scansione, acquisizi
 
 ---
 
-## Schema del repository
-/code
-main.ino
-/images
-setup_front.jpg
-setup_back.jpg
-setup_full.jpg
-README.md
-
----
-
 ## Come funziona
 1. Il servo ruota da 0° a 180°.
 2. A ogni step il sensore HC-SR04 misura la distanza.
