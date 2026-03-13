@@ -39,6 +39,9 @@ Il progetto simula i principi base dei sistemi radar reali (scansione, acquisizi
 ![Vista completa](Vista_completa.jpeg)
 
 ---
+## Codice arduino applicativo
+
+![Codice arduino](programma_radar_arduino.ino)
 
 ## Come funziona
 1. Il servo ruota da 0° a 180°.
