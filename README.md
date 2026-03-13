@@ -1,85 +1,74 @@
 # arduino-radar-system
-Arduino Radar Scanner
-Overview
+# Arduino Radar Scanner
 
-Questo progetto implementa un semplice radar a scansione utilizzando:
+## Overview
+Questo progetto implementa un semplice **radar a scansione** utilizzando:
+- Sensore a ultrasuoni **HC-SR04**
+- Servo motore **SG90**
+- Display **LCD 16×2** in modalità 4 bit
+- Microcontrollore **Arduino Uno**
 
-un sensore a ultrasuoni HC-SR04
+Il sensore viene ruotato tramite il servo tra 0° e 180° per misurare la distanza degli oggetti e visualizzarla sull’LCD.  
+Il progetto simula i principi base dei sistemi radar reali (scansione, acquisizione dati, visualizzazione).
 
-un servo motore per la rotazione
+---
 
-un display LCD 16×2 per la visualizzazione
+## Funzionalità principali
+- Rotazione automatica del sensore tramite servo
+- Misura continua della distanza
+- Visualizzazione dei dati su LCD 16x2
+- Scansione con passo angolare configurabile
+- Struttura estendibile per logging e analisi dati
 
-un microcontrollore Arduino Uno
+---
 
-Il sistema effettua una sweep da 0° a 180°, rileva oggetti tramite la distanza e mostra i valori sul display.
-È pensato come progetto introduttivo per applicazioni simili ai sistemi radar reali: scansione, acquisizione dati, visualizzazione e movimento meccanizzato.
+## Hardware utilizzato
+- **Arduino Uno**
+- **HC-SR04** (sensore ultrasuoni)
+- **SG90** (servo motore)
+- **LCD 16×2** (modalità 4 bit)
+- Potenziometro 10k (per il contrasto del display)
+- Jumpers e breadboard
+- Supporto meccanico per il montaggio
 
-Funzionalità principali
+---
 
-Rotazione del sensore tramite servo
+## Immagini del progetto
+*(sostituisci i nomi file con i tuoi effettivi)*
 
-Misura continua della distanza
-
-Visualizzazione dei dati su LCD
-
-Logica di scansione a step (incrementi angolari configurabili)
-
-Possibilità di estendere il progetto con grafici e logging dati
-
-Hardware utilizzato
-
-Arduino Uno
-
-Sensore ultrasuoni HC-SR04
-
-Servo motore SG90
-
-Display LCD 16×2 (modalità 4 bit)
-
-Potenziometro 10k
-
-Cavi jumpers
-
-Eventuale base/supporto per la struttura meccanica
-
-Schema dei collegamenti
-
-Inserisci qui le immagini che hai caricato:
-
-![Setup frontale](images/setup_front.jpg)
-![Setup retro](images/setup_back.jpg)
+![Vista frontale](images/setup_front.jpg)
+![Vista posteriore](images/setup_back.jpg)
 ![Vista completa](images/setup_full.jpg)
-Struttura del repository
+
+---
+
+## Schema del repository
 /code
-    main.ino
+main.ino
 /images
-    setup_front.jpg
-    setup_back.jpg
-    setup_full.jpg
+setup_front.jpg
+setup_back.jpg
+setup_full.jpg
 README.md
-Come funziona
 
-Il servo ruota il sensore da 0° a 180°.
+---
 
-A ogni step il sensore HC-SR04 misura la distanza.
+## Come funziona
+1. Il servo ruota da 0° a 180°.
+2. A ogni step il sensore HC-SR04 misura la distanza.
+3. L’LCD mostra valore misurato e angolo corrente.
+4. Terminata la scansione, il servo ritorna indietro.
 
-I valori vengono mostrati sull'LCD.
+---
 
-La scansione ricomincia dall’inizio.
+## Possibili estensioni
+- Invio dati al PC via seriale
+- Plot stile radar in Processing / Python
+- Esportazione CSV
+- Filtri per rendere le misure più stabili
+- Aggiunta di un allarme per distanze inferiori a una soglia
 
-Possibili estensioni
+---
 
-Generazione grafico radar su PC via seriale
-
-Salvataggio dati in file CSV
-
-Algoritmo di riconoscimento ostacoli
-
-Visualizzazione 2D stile sonar
-
-Servo scanning più veloce o più preciso
-
-Licenza
-
-Open-source — libero utilizzo per studio e prototipazione.
+## Licenza
+Open-source — libero uso per studio e prototipazione.
