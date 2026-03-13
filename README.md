@@ -1,4 +1,3 @@
-# arduino-radar-system
 # Arduino Radar Scanner
 
 ## Overview
@@ -36,9 +35,9 @@ Il progetto simula i principi base dei sistemi radar reali (scansione, acquisizi
 ## Immagini del progetto
 *(sostituisci i nomi file con i tuoi effettivi)*
 
-![Vista frontale](images/setup_front.jpg)
-![Vista posteriore](images/setup_back.jpg)
-![Vista completa](images/setup_full.jpg)
+![Vista frontale](Setup_frontale.jpg)
+![Vista posteriore](Setup_retro.jpg)
+![Vista completa](Vista_completa.jpg)
 
 ---
 
