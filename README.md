@@ -35,9 +35,9 @@ Il progetto simula i principi base dei sistemi radar reali (scansione, acquisizi
 ## Immagini del progetto
 *(sostituisci i nomi file con i tuoi effettivi)*
 
-![Vista frontale](Setup_frontale.jpg)
-![Vista posteriore](Setup_retro.jpg)
-![Vista completa](Vista_completa.jpg)
+![Vista frontale](Setup_frontale.jpeg)
+![Vista posteriore](Setup_retro.jpeg)
+![Vista completa](Vista_completa.jpeg)
 
 ---
 
